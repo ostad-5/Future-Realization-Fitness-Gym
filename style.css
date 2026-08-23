@@ -1,0 +1,836 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap');
+
+:root{
+  --lime:#d7ff38;
+  --bg:#080909;
+  --card:#101211;
+  --line:#272a27;
+  --muted:#858985;
+  --white:#f4f5ef;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Inter,sans-serif;
+  background:var(--bg);
+  color:var(--white);
+  line-height:1.5;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+button,
+input,
+select{
+  font:inherit;
+}
+
+.container{
+  width:min(1180px,90%);
+  margin:auto;
+}
+
+/* ================= TOP BAR ================= */
+
+.top{
+  height:34px;
+  background:var(--lime);
+  color:#090a08;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:1.8px;
+}
+
+/* ================= NAVBAR ================= */
+
+.nav{
+  height:82px;
+  border-bottom:1px solid var(--line);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:sticky;
+  top:0;
+  z-index:99;
+  background:rgba(8,9,9,.9);
+  backdrop-filter:blur(16px);
+}
+
+.brand{
+  font:700 20px Oswald;
+  letter-spacing:1px;
+}
+
+.brand i{
+  font-style:normal;
+  background:var(--lime);
+  color:#090a08;
+  padding:8px;
+  margin-right:8px;
+}
+
+.brand small{
+  display:block;
+  font:700 7px Inter;
+  letter-spacing:2px;
+  margin-left:48px;
+  color:#777;
+  margin-top:-2px;
+}
+
+nav{
+  display:flex;
+  align-items:center;
+  gap:27px;
+}
+
+nav a{
+  font-size:11px;
+  font-weight:800;
+  color:#aaa;
+  letter-spacing:.6px;
+}
+
+nav a:hover{
+  color:var(--lime);
+}
+
+.navbtn{
+  background:var(--lime);
+  color:#090a08;
+  border:0;
+  padding:13px 18px;
+  font-size:10px;
+  font-weight:900;
+  cursor:pointer;
+}
+
+.hamb{
+  display:none;
+  background:none;
+  border:0;
+  color:#fff;
+  font-size:25px;
+  cursor:pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+  min-height:690px;
+  position:relative;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  background:
+  radial-gradient(
+    circle at 72% 45%,
+    #263019 0,
+    #10130f 28%,
+    #080909 65%
+  );
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8,9,9,.95),
+      rgba(8,9,9,.55),
+      rgba(8,9,9,.18)
+    ),
+    url('images/gym-hero.jpg') center/cover no-repeat;
+  opacity:.6;
+}
+
+.hero .container{
+  position:relative;
+  z-index:2;
+}
+
+.eyebrow{
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:2.3px;
+  color:var(--lime);
+  margin-bottom:18px;
+}
+
+.hero h1{
+  font:700 clamp(58px,8vw,110px)/.86 Oswald;
+  letter-spacing:-2px;
+  max-width:800px;
+}
+
+.hero h1 span{
+  color:var(--lime);
+}
+
+.hero p{
+  color:#aaa;
+  max-width:520px;
+  margin:27px 0;
+  font-size:14px;
+}
+
+.actions{
+  display:flex;
+  gap:12px;
+}
+
+.btn{
+  padding:15px 24px;
+  border:1px solid #444;
+  background:none;
+  color:#fff;
+  font-weight:900;
+  font-size:10px;
+  letter-spacing:1px;
+  cursor:pointer;
+}
+
+.btn.lime{
+  background:var(--lime);
+  color:#080909;
+  border-color:var(--lime);
+}
+
+.btn:hover{
+  border-color:var(--lime);
+}
+
+.hero-stats{
+  display:flex;
+  gap:45px;
+  margin-top:55px;
+}
+
+.hero-stats b{
+  font:700 28px Oswald;
+  display:block;
+}
+
+.hero-stats span{
+  font-size:8px;
+  color:#777;
+  letter-spacing:1.2px;
+}
+
+/* ================= GENERAL SECTION ================= */
+
+section{
+  padding:100px 0;
+}
+
+.head{
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:40px;
+  margin-bottom:45px;
+}
+
+.head h2{
+  font:600 clamp(38px,5vw,62px)/.94 Oswald;
+}
+
+.head h2 em{
+  font-style:normal;
+  color:var(--lime);
+}
+
+.head > p{
+  max-width:350px;
+  color:#777;
+  font-size:12px;
+}
+
+/* ================= ABOUT ================= */
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:80px;
+}
+
+.about-copy > p{
+  color:#999;
+  line-height:1.9;
+}
+
+.features{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+  margin-top:35px;
+}
+
+.feature{
+  border-top:1px solid var(--line);
+  padding-top:16px;
+}
+
+.feature strong{
+  display:block;
+  font-size:13px;
+  margin:7px 0;
+}
+
+.feature span{
+  font-size:9px;
+  color:#777;
+}
+
+.feature b{
+  color:var(--lime);
+}
+
+/* ================= MEMBERSHIP ================= */
+
+.dark{
+  background:#111312;
+}
+
+.plans{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+
+.plan{
+  border:1px solid var(--line);
+  padding:32px;
+  min-height:455px;
+  position:relative;
+  background:#0b0d0c;
+}
+
+.plan.hot{
+  border-color:var(--lime);
+  background:
+  linear-gradient(
+    145deg,
+    #161b12,
+    #0b0d0c
+  );
+}
+
+.tag{
+  position:absolute;
+  top:0;
+  right:0;
+  background:var(--lime);
+  color:#080909;
+  padding:8px 12px;
+  font-size:8px;
+  font-weight:900;
+}
+
+.plan small{
+  font-size:9px;
+  color:#666;
+  letter-spacing:1.5px;
+}
+
+.plan h3{
+  font:600 31px Oswald;
+  margin:22px 0 8px;
+}
+
+.price{
+  font:700 31px Oswald;
+  color:var(--lime);
+}
+
+.price span{
+  font:400 10px Inter;
+  color:#777;
+}
+
+.plan ul{
+  list-style:none;
+  border-top:1px solid var(--line);
+  margin:25px 0;
+}
+
+.plan li{
+  font-size:11px;
+  color:#aaa;
+  padding:10px 0;
+  border-bottom:1px solid #1c1f1d;
+}
+
+.plan li:before{
+  content:"✓";
+  color:var(--lime);
+  margin-right:9px;
+}
+
+.plan .btn{
+  position:absolute;
+  bottom:28px;
+  left:32px;
+  right:32px;
+}
+
+/* ================= EQUIPMENT ================= */
+
+.equip-grid,
+.shop-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+}
+
+.equip,
+.product{
+  border:1px solid var(--line);
+  padding:14px;
+  transition:.25s;
+}
+
+.equip:hover,
+.product:hover{
+  transform:translateY(-5px);
+  border-color:var(--lime);
+}
+
+.equip-img,
+.product-img{
+  height:210px;
+  background:#151817 center/cover no-repeat;
+  display:grid;
+  place-items:end;
+  padding:13px;
+}
+
+.equip-img span,
+.product-img span{
+  background:#080909d9;
+  padding:7px 10px;
+  color:var(--lime);
+  font-size:9px;
+  font-weight:900;
+}
+
+.equip h3,
+.product h3{
+  font:600 21px Oswald;
+  margin:15px 0 4px;
+}
+
+.equip p,
+.product p{
+  font-size:9px;
+  color:#666;
+  letter-spacing:1.4px;
+}
+
+.equip strong,
+.product strong{
+  display:block;
+  color:var(--lime);
+  font:700 18px Oswald;
+  margin-top:12px;
+}
+
+/* ================= TRAINER ================= */
+
+.trainer{
+  background:#151815;
+}
+
+.trainer-grid{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:70px;
+  align-items:center;
+}
+
+.trainer-copy > p{
+  color:#999;
+  max-width:580px;
+  margin:25px 0;
+  line-height:1.8;
+}
+
+.checks{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin:25px 0;
+}
+
+.checks span{
+  font-size:11px;
+  color:#bbb;
+}
+
+.checks span:before{
+  content:"✓";
+  color:var(--lime);
+  margin-right:8px;
+}
+
+.trainer-card{
+  border:1px solid #343834;
+  padding:13px;
+  background:#0c0e0d;
+}
+
+.trainer-photo{
+  height:330px;
+  background:url('images/trainer-1.jpg') center/cover;
+  position:relative;
+}
+
+.trainer-photo:after{
+  content:"CERTIFIED COACH";
+  position:absolute;
+  bottom:12px;
+  left:12px;
+  background:var(--lime);
+  color:#080909;
+  padding:8px;
+  font-size:8px;
+  font-weight:900;
+}
+
+.trainer-info{
+  padding:18px;
+}
+
+.trainer-info h3{
+  font:600 27px Oswald;
+}
+
+.trainer-info p{
+  font-size:10px;
+  color:#777;
+  margin:5px 0 14px;
+}
+
+.trainer-info strong{
+  color:var(--lime);
+  font:700 24px Oswald;
+}
+
+/* ================= SHOP ================= */
+
+.shop{
+  background:#0d0f0e;
+}
+
+.product-img{
+  height:235px;
+}
+
+.whey{
+  background-image:url('images/whey.jpg');
+}
+
+.bar{
+  background-image:url('images/protein-bar.jpg');
+}
+
+.creatine{
+  background-image:url('images/creatine.jpg');
+}
+
+.shaker{
+  background-image:url('images/shaker.jpg');
+}
+
+.product > div:last-child{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-top:18px;
+}
+
+.add{
+  background:none;
+  border:1px solid #444;
+  color:#fff;
+  padding:8px 12px;
+  font-size:9px;
+  font-weight:900;
+  cursor:pointer;
+}
+
+.add:hover{
+  border-color:var(--lime);
+  color:var(--lime);
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+}
+
+.contact-card{
+  border:1px solid var(--line);
+  padding:35px;
+}
+
+.contact-card h3{
+  font:600 31px Oswald;
+  margin-bottom:15px;
+}
+
+.contact-card p{
+  color:#888;
+  font-size:12px;
+  margin:8px 0;
+}
+
+.contact-form{
+  display:grid;
+  gap:12px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea,
+.modal input,
+.modal select{
+  background:#0a0b0b;
+  border:1px solid #303330;
+  color:#fff;
+  padding:14px;
+  outline:none;
+}
+
+.contact-form textarea{
+  height:120px;
+  resize:vertical;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus{
+  border-color:var(--lime);
+}
+
+/* ================= CTA ================= */
+
+.cta{
+  text-align:center;
+  padding:130px 0;
+}
+
+.cta h2{
+  font:600 clamp(45px,7vw,82px)/.9 Oswald;
+  margin:12px 0 30px;
+}
+
+.cta h2 em{
+  font-style:normal;
+  color:var(--lime);
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+  border-top:1px solid var(--line);
+  padding:50px 0 70px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:40px;
+}
+
+.footer-grid b{
+  font-size:9px;
+  color:#777;
+  letter-spacing:1.5px;
+}
+
+.footer-grid a,
+.footer-grid p{
+  display:block;
+  color:#777;
+  font-size:11px;
+  margin-top:11px;
+}
+
+.copy{
+  font-size:8px;
+  color:#444;
+  margin-top:50px;
+}
+
+/* ================= MODAL ================= */
+
+.modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:#000c;
+  z-index:150;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+
+.modal.show{
+  display:flex;
+}
+
+.modal-box{
+  width:min(510px,100%);
+  background:#111312;
+  border:1px solid #3a3d39;
+  padding:40px;
+  position:relative;
+}
+
+.close{
+  position:absolute;
+  right:16px;
+  top:10px;
+  background:none;
+  border:0;
+  color:#aaa;
+  font-size:27px;
+  cursor:pointer;
+}
+
+.modal-box h2{
+  font:600 40px Oswald;
+  margin-bottom:22px;
+}
+
+.modal-box h2 em{
+  font-style:normal;
+  color:var(--lime);
+}
+
+.modal form{
+  display:grid;
+  gap:11px;
+}
+
+/* ================= TOAST ================= */
+
+.toast{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  z-index:200;
+  background:var(--lime);
+  color:#080909;
+  padding:14px 18px;
+  font-size:10px;
+  font-weight:900;
+  transform:translateY(100px);
+  transition:.3s;
+}
+
+.toast.show{
+  transform:translateY(0);
+}
+
+/* ================= TABLET ================= */
+
+@media(max-width:950px){
+
+  nav{
+    display:none;
+  }
+
+  .hamb{
+    display:block;
+  }
+
+  .plans{
+    grid-template-columns:1fr;
+  }
+
+  .equip-grid,
+  .shop-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .about-grid,
+  .trainer-grid,
+  .contact{
+    grid-template-columns:1fr;
+    gap:45px;
+  }
+
+  .head{
+    display:block;
+  }
+
+  .head > p{
+    margin-top:18px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:600px){
+
+  .top{
+    font-size:8px;
+  }
+
+  .hero{
+    min-height:650px;
+  }
+
+  .hero-stats{
+    gap:20px;
+  }
+
+  .hero-stats b{
+    font-size:22px;
+  }
+
+  .hero-stats span{
+    font-size:7px;
+  }
+
+  .equip-grid,
+  .shop-grid,
+  .features,
+  .checks{
+    grid-template-columns:1fr;
+  }
+
+  section{
+    padding:75px 0;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .brand{
+    font-size:16px;
+  }
+}

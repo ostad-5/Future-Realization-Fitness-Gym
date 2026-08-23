@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Future Realization Fitness Gym - Premium gym, personal training and fitness store.">
+
+    <title>Future Realization Fitness Gym</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= TOP BAR ================= -->
+
+<div class="top">
+    OPEN DAILY • 6:00 AM — 11:00 PM
+</div>
+
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="nav">
+
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;width:90%;">
+
+        <a href="#home" class="brand">
+
+            <i>FR</i>
+
+            FUTURE REALIZATION
+
+            <small>FITNESS GYM</small>
+
+        </a>
+
+
+        <button class="hamb" onclick="toggleMenu()">
+            ☰
+        </button>
+
+
+        <nav id="mainNav">
+
+            <a href="#home">HOME</a>
+
+            <a href="#about">ABOUT</a>
+
+            <a href="#membership">MEMBERSHIP</a>
+
+            <a href="#equipment">EQUIPMENT</a>
+
+            <a href="#trainers">TRAINERS</a>
+
+            <a href="#shop">SHOP</a>
+
+            <a href="#contact">CONTACT</a>
+
+            <button class="navbtn" onclick="openJoin()">
+                JOIN NOW
+            </button>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="container">
+
+        <p class="eyebrow">
+            NARAYANGANJ'S PREMIUM TRAINING DESTINATION
+        </p>
+
+
+        <h1>
+
+            BUILD THE
+
+            <br>
+
+            <span>STRONGER</span> YOU.
+
+        </h1>
+
+
+        <p>
+            Train harder. Recover smarter. Become the strongest
+            version of yourself at Future Realization Fitness Gym.
+        </p>
+
+
+        <div class="actions">
+
+            <button
+                class="btn lime"
+                onclick="document.getElementById('membership').scrollIntoView()">
+
+                VIEW MEMBERSHIPS ↗
+
+            </button>
+
+
+            <button
+                class="btn"
+                onclick="document.getElementById('equipment').scrollIntoView()">
+
+                EXPLORE GYM
+
+            </button>
+
+        </div>
+
+
+
+        <div class="hero-stats">
+
+            <div>
+                <b>12K+</b>
+                <span>MEMBERS</span>
+            </div>
+
+
+            <div>
+                <b>30+</b>
+                <span>PREMIUM MACHINES</span>
+            </div>
+
+
+            <div>
+                <b>15+</b>
+                <span>EXPERT TRAINERS</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+    <div class="container">
+
+        <div class="head">
+
+            <div>
+
+                <p class="eyebrow">
+                    WHY FUTURE REALIZATION
+                </p>
+
+                <h2>
+                    MORE THAN A GYM.
+                    <br>
+                    IT'S YOUR <em>NEXT LEVEL.</em>
+                </h2>
+
+            </div>
+
+
+            <p>
+                A premium fitness environment built for
+                beginners, athletes and serious lifters.
+            </p>
+
+        </div>
+
+
+
+        <div class="about-grid">
+
+
+            <div class="about-copy">
+
+                <p>
+
+                    Future Realization Fitness Gym is designed
+                    for people who take their progress seriously.
+
+                    From strength training and cardio to personal
+                    coaching and nutrition, everything you need
+                    is available under one roof.
+
+                </p>
+
+
+                <div class="features">
+
+
+                    <div class="feature">
+
+                        <b>01</b>
+
+                        <strong>
+                            Premium Equipment
+                        </strong>
+
+                        <span>
+                            Dumbbells, barbells, racks,
+                            cables and modern machines.
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="feature">
+
+                        <b>02</b>
+
+                        <strong>
+                            Expert Coaching
+                        </strong>
+
+                        <span>
+                            Goal-based training programs
+                            from experienced trainers.
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="feature">
+
+                        <b>03</b>
+
+                        <strong>
+                            Nutrition Store
+                        </strong>
+
+                        <span>
+                            Whey protein, protein bars,
+                            creatine and fitness essentials.
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="feature">
+
+                        <b>04</b>
+
+                        <strong>
+                            Premium Environment
+                        </strong>
+
+                        <span>
+                            Clean, spacious and motivating
+                            training environment.
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <img
+                    src="images/gym-floor.jpg"
+                    alt="Future Realization Gym"
+                    style="width:100%;height:420px;object-fit:cover;">
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= MEMBERSHIP ================= -->
+
+<section class="dark" id="membership">
+
+    <div class="container">
+
+
+        <div class="head">
+
+            <div>
+
+                <p class="eyebrow">
+                    MEMBERSHIP
+                </p>
+
+                <h2>
+                    CHOOSE YOUR
+                    <em>COMMITMENT.</em>
+                </h2>
+
+            </div>
+
+
+            <p>
+                Simple packages. No hidden fees.
+                Upgrade anytime.
+            </p>
+
+        </div>
+
+
+
+        <div class="plans">
+
+
+            <!-- 1 MONTH -->
+
+            <div class="plan">
+
+                <small>
+                    01 / MONTHLY
+                </small>
+
+                <h3>
+                    STARTER
+                </h3>
+
+                <div class="price">
+                    ৳1,500
+                    <span>/ month</span>
+                </div>
+
+
+                <ul>
+
+                    <li>
+                        Full gym access
+                    </li>
+
+                    <li>
+                        Locker access
+                    </li>
+
+                    <li>
+                        Fitness assessment
+                    </li>
+
+                    <li>
+                        Basic workout plan
+                    </li>
+
+                    <li>
+                        Cardio & strength zone
+                    </li>
+
+                </ul>
+
+
+                <button
+                    class="btn"
+                    onclick="openJoin('Starter - 1 Month')">
+
+                    GET STARTED
+
+                </button>
+
+            </div>
+
+
+
+            <!-- 3 MONTH -->
+
+            <div class="plan hot">
+
+                <div class="tag">
+                    MOST POPULAR
+                </div>
+
+
+                <small>
+                    02 / QUARTERLY
+                </small>
+
+                <h3>
+                    TRANSFORM
+                </h3>
+
+
+                <div class="price">
+                    ৳3,900
+                    <span>/ 3 months</span>
+                </div>
+
+
+                <ul>
+
+                    <li>
+                        Full gym access
+                    </li>
+
+                    <li>
+                        Locker access
+                    </li>
+
+                    <li>
+                        Monthly progress check
+                    </li>
+
+                    <li>
+                        Personalized workout plan
+                    </li>
+
+                    <li>
+                        Nutrition guidance
+                    </li>
+
+                    <li>
+                        Member discount
+                    </li>
+
+                </ul>
+
+
+                <button
+                    class="btn lime"
+                    onclick="openJoin('Transform - 3 Months')">
+
+                    JOIN TRANSFORM
+
+                </button>
+
+            </div>
+
+
+
+            <!-- 12 MONTH -->
+
+            <div class="plan">
+
+                <small>
+                    03 / ANNUAL
+                </small>
+
+                <h3>
+                    ELITE
+                </h3>
+
+
+                <div class="price">
+                    ৳12,000
+                    <span>/ 12 months</span>
+                </div>
+
+
+                <ul>
+
+                    <li>
+                        Unlimited gym access
+                    </li>
+
+                    <li>
+                        Priority locker
+                    </li>
+
+                    <li>
+                        Monthly body assessment
+                    </li>
+
+                    <li>
+                        Personalized training plan
+                    </li>
+
+                    <li>
+                        Nutrition consultation
+                    </li>
+
+                    <li>
+                        Premium member discount
+                    </li>
+
+                </ul>
+
+
+                <button
+                    class="btn"
+                    onclick="openJoin('Elite - 12 Months')">
+
+                    GO ELITE
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= EQUIPMENT ================= -->
+
+<section id="equipment">
+
+    <div class="container">
+
+
+        <div class="head">
+
+            <div>
+
+                <p class="eyebrow">
+                    THE GYM FLOOR
+                </p>
+
+                <h2>
+                    EQUIPMENT BUILT
+                    FOR <em>RESULTS.</em>
+                </h2>
+
+            </div>
+
+
+            <p>
+                Professional-grade equipment for
+                beginners, athletes and serious lifters.
+            </p>
+
+        </div>
+
+
+
+        <div class="equip-grid">
+
+
+            <!-- DUMBBELL -->
+
+            <div class="equip">
+
+                <div
+                    class="equip-img"
+                    style="background-image:url('images/dumbbell.jpg');">
+
+                    <span>
+                        1KG — 50KG
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Rubber Dumbbell Set
+                </h3>
+
+                <p>
+                    FREE WEIGHTS
+                </p>
+
+                <strong>
+                    ৳550 — ৳18,000
+                </strong>
+
+            </div>
+
+
+
+            <!-- PLATES -->
+
+            <div class="equip">
+
+                <div
+                    class="equip-img"
+                    style="background-image:url('images/plates.jpg');">
+
+                    <span>
+                        2.5KG — 25KG
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Olympic Weight Plates
+                </h3>
+
+                <p>
+                    WEIGHT PLATES
+                </p>
+
+                <strong>
+                    ৳350 — ৳22,000
+                </strong>
+
+            </div>
+
+
+
+            <!-- BARBELL -->
+
+            <div class="equip">
+
+                <div
+                    class="equip-img"
+                    style="background-image:url('images/barbell.jpg');">
+
+                    <span>
+                        20KG
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Olympic Barbell
+                </h3>
+
+                <p>
+                    BARBELL
+                </p>
+
+                <strong>
+                    ৳8,500 — ৳16,000
+                </strong>
+
+            </div>
+
+
+
+            <!-- TREADMILL -->
+
+            <div class="equip">
+
+                <div
+                    class="equip-img"
+                    style="background-image:url('images/treadmill.jpg');">
+
+                    <span>
+                        COMMERCIAL
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Commercial Treadmill
+                </h3>
+
+                <p>
+                    CARDIO
+                </p>
+
+                <strong>
+                    ৳180,000 — ৳400,000
+                </strong>
+
+            </div>
+
+
+
+            <!-- CABLE -->
+
+            <div class="equip">
+
+                <div
+                    class="equip-img"
+                    style="background-image:url('images/cable-machine.jpg');">
+
+                    <span>
+                        DUAL PULLEY
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Cable Machine
+                </h3>
+
+                <p>
+                    FUNCTIONAL TRAINING
+                </p>
+
+                <strong>
+                    ৳120,000 — ৳250,000
+                </strong>
+
+            </div>
+
+
+
+            <!-- LEG PRESS -->
+
+            <div class="equip">
+
+                <div
+                    class="equip-img"
+                    style="background-image:url('images/leg-press.jpg');">
+
+                    <span>
+                        45° PRESS
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Leg Press Machine
+                </h3>
+
+                <p>
+                    LOWER BODY
+                </p>
+
+                <strong>
+                    ৳180,000 — ৳350,000
+                </strong>
+
+            </div>
+
+
+
+            <!-- CHEST PRESS -->
+
+            <div class="equip">
+
+                <div
+                    class="equip-img"
+                    style="background-image:url('images/chest-press.jpg');">
+
+                    <span>
+                        COMMERCIAL
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Chest Press Machine
+                </h3>
+
+                <p>
+                    CHEST
+                </p>
+
+                <strong>
+                    ৳140,000 — ৳280,000
+                </strong>
+
+            </div>
+
+
+
+            <!-- POWER RACK -->
+
+            <div class="equip">
+
+                <div
+                    class="equip-img"
+                    style="background-image:url('images/power-rack.jpg');">
+
+                    <span>
+                        HEAVY DUTY
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Power Rack
+                </h3>
+
+                <p>
+                    STRENGTH
+                </p>
+
+                <strong>
+                    ৳45,000 — ৳90,000
+                </strong>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= TRAINER ================= -->
+
+<section class="trainer" id="trainers">
+
+    <div class="container">
+
+
+        <div class="trainer-grid">
+
+
+            <div class="trainer-copy">
+
+                <p class="eyebrow">
+                    PERSONAL TRAINING
+                </p>
+
+
+                <div class="head">
+
+                    <div>
+
+                        <h2>
+                            TRAIN WITH
+                            <em>PURPOSE.</em>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    Don't just come to the gym and randomly
+                    exercise. Get a professional trainer who
+                    creates a personalized program based on
+                    your body and goals.
+
+                </p>
+
+
+                <div class="checks">
+
+                    <span>
+                        Goal-based workout program
+                    </span>
+
+                    <span>
+                        Weekly progress tracking
+                    </span>
+
+                    <span>
+                        Exercise form correction
+                    </span>
+
+                    <span>
+                        Nutrition guidance
+                    </span>
+
+                    <span>
+                        Body composition analysis
+                    </span>
+
+                    <span>
+                        Dedicated trainer support
+                    </span>
+
+                </div>
+
+
+                <button
+                    class="btn lime"
+                    onclick="openJoin('Personal Trainer Subscription')">
+
+                    GET A PERSONAL TRAINER ↗
+
+                </button>
+
+            </div>
+
+
+
+            <div class="trainer-card">
+
+                <div class="trainer-photo"></div>
+
+
+                <div class="trainer-info">
+
+                    <h3>
+                        PREMIUM PERSONAL TRAINING
+                    </h3>
+
+                    <p>
+                        Certified coach • Customized program
+                    </p>
+
+                    <strong>
+                        ৳4,500
+                        <span style="font:400 10px Inter;color:#777;">
+                            / month
+                        </span>
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SHOP ================= -->
+
+<section class="shop" id="shop">
+
+    <div class="container">
+
+
+        <div class="head">
+
+            <div>
+
+                <p class="eyebrow">
+                    FR PERFORMANCE STORE
+                </p>
+
+                <h2>
+                    FUEL YOUR
+                    <em>PROGRESS.</em>
+                </h2>
+
+            </div>
+
+
+            <button class="btn" onclick="showCart()">
+
+                CART
+
+                <span id="cartCount">
+                    0
+                </span>
+
+            </button>
+
+        </div>
+
+
+
+        <div class="shop-grid">
+
+
+            <!-- WHEY -->
+
+            <div class="product">
+
+                <div class="product-img whey">
+
+                    <span>
+                        2 LB
+                    </span>
+
+                </div>
+
+
+                <p>
+                    PROTEIN
+                </p>
+
+                <h3>
+                    100% Whey Protein
+                </h3>
+
+                <p>
+                    30 SERVINGS • PREMIUM QUALITY
+                </p>
+
+
+                <div>
+
+                    <strong>
+                        ৳5,800
+                    </strong>
+
+
+                    <button
+                        class="add"
+                        onclick="addCart('100% Whey Protein',5800)">
+
+                        ADD +
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PROTEIN BAR -->
+
+            <div class="product">
+
+                <div class="product-img bar">
+
+                    <span>
+                        12 BARS
+                    </span>
+
+                </div>
+
+
+                <p>
+                    SNACK
+                </p>
+
+                <h3>
+                    High Protein Bar
+                </h3>
+
+                <p>
+                    20G PROTEIN • 12 BARS
+                </p>
+
+
+                <div>
+
+                    <strong>
+                        ৳1,800
+                    </strong>
+
+
+                    <button
+                        class="add"
+                        onclick="addCart('High Protein Bar',1800)">
+
+                        ADD +
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CREATINE -->
+
+            <div class="product">
+
+                <div class="product-img creatine">
+
+                    <span>
+                        300G
+                    </span>
+
+                </div>
+
+
+                <p>
+                    PERFORMANCE
+                </p>
+
+                <h3>
+                    Creatine Monohydrate
+                </h3>
+
+                <p>
+                    60 SERVINGS • PURE CREATINE
+                </p>
+
+
+                <div>
+
+                    <strong>
+                        ৳2,400
+                    </strong>
+
+
+                    <button
+                        class="add"
+                        onclick="addCart('Creatine Monohydrate',2400)">
+
+                        ADD +
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SHAKER -->
+
+            <div class="product">
+
+                <div class="product-img shaker">
+
+                    <span>
+                        700 ML
+                    </span>
+
+                </div>
+
+
+                <p>
+                    ACCESSORY
+                </p>
+
+                <h3>
+                    FR Premium Shaker
+                </h3>
+
+                <p>
+                    BPA FREE • PREMIUM BUILD
+                </p>
+
+
+                <div>
+
+                    <strong>
+                        ৳650
+                    </strong>
+
+
+                    <button
+                        class="add"
+                        onclick="addCart('FR Premium Shaker',650)">
+
+                        ADD +
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+    <div class="container">
+
+
+        <div class="head">
+
+            <div>
+
+                <p class="eyebrow">
+                    CONTACT US
+                </p>
+
+                <h2>
+                    LET'S START YOUR
+                    <em>JOURNEY.</em>
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="contact">
+
+
+            <div class="contact-card">
+
+                <h3>
+                    FUTURE REALIZATION
+                    FITNESS GYM
+                </h3>
+
+
+                <p>
+                    📍 Narayanganj, Bangladesh
+                </p>
+
+                <p>
+                    ☎ +880 1XXX-XXXXXX
+                </p>
+
+                <p>
+                    ✉ hello@futurerealization.com
+                </p>
+
+                <p>
+                    🕐 Every Day: 6:00 AM — 11:00 PM
+                </p>
+
+
+                <br>
+
+
+                <p>
+                    Come visit us and experience
+                    premium fitness training in a
+                    professional environment.
+                </p>
+
+            </div>
+
+
+
+            <form
+                class="contact-form"
+                onsubmit="submitContact(event)">
+
+                <input
+                    type="text"
+                    placeholder="Your Full Name"
+                    required>
+
+
+                <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    required>
+
+
+                <input
+                    type="email"
+                    placeholder="Email Address">
+
+
+                <select required>
+
+                    <option value="">
+                        Select Subject
+                    </option>
+
+                    <option>
+                        Gym Membership
+                    </option>
+
+                    <option>
+                        Personal Trainer
+                    </option>
+
+                    <option>
+                        Equipment
+                    </option>
+
+                    <option>
+                        Supplement Store
+                    </option>
+
+                </select>
+
+
+                <textarea
+                    placeholder="Your Message"></textarea>
+
+
+                <button
+                    class="btn lime"
+                    type="submit">
+
+                    SEND MESSAGE ↗
+
+                </button>
+
+            </form>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <p class="eyebrow">
+            YOUR FUTURE STARTS TODAY
+        </p>
+
+
+        <h2>
+
+            READY TO
+
+            <em>REALIZE</em>
+
+            IT?
+
+        </h2>
+
+
+        <button
+            class="btn lime"
+            onclick="openJoin()">
+
+            BECOME A MEMBER ↗
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <div>
+
+                <div class="brand">
+
+                    <i>FR</i>
+
+                    FUTURE REALIZATION
+
+                    <small>
+                        FITNESS GYM
+                    </small>
+
+                </div>
+
+
+                <p style="margin-top:20px;">
+                    Strength • Discipline • Transformation
+                </p>
+
+            </div>
+
+
+
+            <div>
+
+                <b>
+                    QUICK LINKS
+                </b>
+
+                <a href="#membership">
+                    Membership
+                </a>
+
+                <a href="#equipment">
+                    Equipment
+                </a>
+
+                <a href="#trainers">
+                    Trainers
+                </a>
+
+                <a href="#shop">
+                    Shop
+                </a>
+
+            </div>
+
+
+
+            <div>
+
+                <b>
+                    CONTACT
+                </b>
+
+                <p>
+                    Narayanganj, Bangladesh
+                </p>
+
+                <p>
+                    +880 1XXX-XXXXXX
+                </p>
+
+                <p>
+                    hello@futurerealization.com
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="copy">
+
+            © 2026 Future Realization Fitness Gym.
+            All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ================= JOIN MODAL ================= -->
+
+<div
+    class="modal"
+    id="joinModal">
+
+
+    <div class="modal-box">
+
+
+        <button
+            class="close"
+            onclick="closeJoin()">
+
+            ×
+
+        </button>
+
+
+        <p class="eyebrow">
+            MEMBERSHIP APPLICATION
+        </p>
+
+
+        <h2>
+            START YOUR
+            <em>JOURNEY.</em>
+        </h2>
+
+
+        <form
+            onsubmit="submitJoin(event)">
+
+
+            <input
+                id="selectedPlan"
+                type="text"
+                placeholder="Selected Package"
+                readonly>
+
+
+            <input
+                type="text"
+                placeholder="Full Name"
+                required>
+
+
+            <input
+                type="tel"
+                placeholder="Phone Number"
+                required>
+
+
+            <input
+                type="email"
+                placeholder="Email Address">
+
+
+            <select required>
+
+                <option value="">
+                    Choose Package
+                </option>
+
+                <option>
+                    Starter - 1 Month
+                </option>
+
+                <option>
+                    Transform - 3 Months
+                </option>
+
+                <option>
+                    Elite - 12 Months
+                </option>
+
+                <option>
+                    Personal Trainer Subscription
+                </option>
+
+            </select>
+
+
+            <button
+                class="btn lime"
+                type="submit">
+
+                SUBMIT APPLICATION ↗
+
+            </button>
+
+
+        </form>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- ================= TOAST ================= -->
+
+<div
+    class="toast"
+    id="toast">
+
+</div>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
